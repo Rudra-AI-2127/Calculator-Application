@@ -1,7 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-// Calculator.java
 class Calculator {
 
     // Overloaded methods for addition
@@ -35,8 +34,6 @@ class Calculator {
         return (double) a / b;
     }
 }
-
-// UserInterface.java
 
 public class UserInterface {
     private Scanner scanner;
@@ -76,7 +73,7 @@ public class UserInterface {
 
         } catch (InputMismatchException e) {
             System.out.println("Invalid input! Please enter valid numbers.");
-            scanner.nextLine(); // clear buffer
+            scanner.nextLine(); 
         }
     }
 
@@ -152,7 +149,7 @@ public class UserInterface {
             } catch (InputMismatchException e) {
                 System.out.println("Invalid input! Please enter a valid choice.");
                 scanner.nextLine();
-                choice = 0; // reset choice to loop again
+                choice = 0; 
             }
 
         } while (choice != 5);
